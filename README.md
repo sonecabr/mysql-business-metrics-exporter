@@ -23,3 +23,6 @@ export MYSQL_PORT=3306
 ```
 docker-compose up
 ```
+Then use the file migrations/000-base.sql to populate local db
+
+
