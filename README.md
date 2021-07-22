@@ -26,3 +26,6 @@ docker-compose up
 Then use the file migrations/000-base.sql to populate local db
 
 
+## to check metrics
+curl -XGET http://localhost:8090/metrics
+
