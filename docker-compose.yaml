@@ -12,3 +12,17 @@ services:
       MYSQL_DATABASE: payments
       MYSQL_USER: user
       MYSQL_PASSWORD: pass
+  exporter:
+    depends_on: 
+     - db
+    platform: linux/x86_64
+    build: 
+      context: .
+    restart: always
+    ports:
+     - 8090:8090
+    environment:
+      MYSQL_USERNAME: user
+      MYSQL_ADDR: db
+      MYSQL_DB: payments
+      MYSQL_PORT: 3306 

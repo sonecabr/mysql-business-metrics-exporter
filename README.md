@@ -25,6 +25,19 @@ docker-compose up
 ```
 Then use the file migrations/000-base.sql to populate local db
 
+## run using docker-compose
+- 1 
+```
+docker-compose up
+```
+- 2
+Using a mysql client connect to local mysql ( workbench for instance )
+host: 127.0.0.1
+username: user
+password: pass
+database: payments
+- 3
+Run script available on migrations/000-base.sql using your connected mysql client
 
 ## to check metrics
 curl -XGET http://localhost:8090/metrics
