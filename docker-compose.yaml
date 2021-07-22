@@ -23,7 +23,7 @@ services:
      - 8090:8090
     environment:
       MYSQL_USERNAME: user
-      MYSQL_USERNAME: pass
+      MYSQL_PASSWORD: pass
       MYSQL_ADDR: db
       MYSQL_DB: payments
       MYSQL_PORT: 3306 
